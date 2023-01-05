@@ -1,4 +1,4 @@
-openapi: 3.0.0
+openapi: 3.0.3
 info:
   title: Sample API
   description: Optional multiline or single-line description in [CommonMark](http://commonmark.org/help/) or HTML.
@@ -21,4 +21,43 @@ paths:
               schema: 
                 type: array
                 items: 
-                  type: string
+                  type: "object"
+                  properties:
+                    id:
+                      type: "integer"
+                      format: "int64"
+                      example: 1
+                    last_name:
+                      type: "string"
+                      example: "\u6589\u85e4"
+                    first_name:
+                      type: "string"
+                      example: "\u4e03\u590f"
+                    email:
+                      type: "string"
+                      example: "test@example.com"
+                    post_code:
+                      type: "string"
+                      example: "999-9999"
+                    address_prefecture:
+                      type: "string"
+                      example: "\u30d3\u30eb\u540d102"
+                    
+                    address_city:
+                      type: "string"
+                      example: "\u30d3\u30eb\u540d102"
+                    
+                    address_street_address:
+                      type: "string"
+                      example: "\u30d3\u30eb\u540d102"
+                    
+                    address_building_number:
+                      type: "string"
+                      example: "\u30d3\u30eb\u540d102"
+                    phone_number:
+                      type: "string"
+                      example: "090-1234-5678"
+                    email_verified_at:
+                      type: "string"
+                      example: "2023-01-04T07:46:46.000000Z"
+                     
